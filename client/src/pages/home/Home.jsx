@@ -3,15 +3,15 @@ import Featured from "../../components/featured/Featured";
 import "./home.scss";
 import List from "../../components/list/List";
 
-const Home = () => {
+const Home = ({ type }) => {
   return (
     <div className="home">
       <Navbar />
-      <Featured/>
-      <List/>
-      <List/>
-      <List/>
-      <List/>
+      <Featured type={type} />
+      <List />
+      <List />
+      <List />
+      <List />
     </div>
   );
 };
